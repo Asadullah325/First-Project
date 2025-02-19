@@ -52,13 +52,13 @@ const CartContent = () => {
             alt={product.name}
             className="w-20 h-24 object-cover rounded"
           />
-          <div>
+          <div className="flex-grow">
             <h3 className="font-semibold">{product.name}</h3>
             <p className="text-sm text-gray-600">{product.category}</p>
             
           </div>
 
-          <div>
+          <div className="">
           <p className="text-green-600 text-sm font-bold">${product.price.toFixed(2)}</p>
           <button className="cursor-pointer">
             <RiDeleteBin3Line className="h-5 w-5 text-red-600"/>

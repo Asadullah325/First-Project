@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import CartDrawer from "../Cart/CartDrawer";
+import CartDrawer from "../../Cart/CartDrawer";
 
 import {
   HiOutlineUser,
@@ -96,6 +96,23 @@ const Navbar = () => {
             <button onClick={toggleNavDrawer} className="cursor-pointer">
                 <IoClose className="h-5 w-5 text-gray-600"/>
             </button>
+        </div>
+        <div className="p-4">
+          <h2 className="text-xl font-semibold mb-4">Menu</h2>
+          <nav className="space-y-4">
+            <Link to="/" onClick={toggleNavDrawer} className="block text-gray-600 hover:text-gray-800 mb-2">
+              Men
+            </Link>
+            <Link to="/" onClick={toggleNavDrawer} className="block text-gray-600 hover:text-gray-800 mb-2">
+              Women
+            </Link>
+            <Link to="/" onClick={toggleNavDrawer} className="block text-gray-600 hover:text-gray-800 mb-2">
+              Top Wear
+            </Link>
+            <Link to="/" onClick={toggleNavDrawer} className="block text-gray-600 hover:text-gray-800 mb-2">
+              Bottom Wear
+            </Link>
+          </nav>
         </div>
       </div>
     </>
